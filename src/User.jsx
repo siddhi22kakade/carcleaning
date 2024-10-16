@@ -24,6 +24,15 @@ export const User = [
       duration: "45min",
       info: "Foam & Pressure Wash Glass Cleaning  Towel Dry Tyre Dressing."
     },
-    
-    
-  ];
+  ];
+  export  const register= [
+      { title: '?', subtitle: 'Your Appointment Date' },
+      { title: '?', subtitle: 'Your Appointment Date' },
+      { title: '0 h 0 min', subtitle: 'Duration', extraClass: 'md:w-[600px]' },
+      { title: '0.00$', subtitle: 'Total price' },
+      ];
+
+        export const regbuton= [
+          { text: 'Confirm Booking', extraClass: 'rounded-full' },
+          { text: 'Prev', extraClass: 'rounded-full' },
+        ];

@@ -7,6 +7,7 @@ function BookingCar() {
   const onPrev=()=>{
     setPrev(true);
   }
+
   if(prev){
     return(
       <Car/>
