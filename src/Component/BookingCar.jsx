@@ -1,11 +1,25 @@
-import { useState } from "react";
+import React ,{ useState } from "react";
 import { User } from "../User";
 import Car from "./Car";
+import Registerpage from "./Registerpage";
+import Addonoption from "./Addonoption";
 
-function BookingCar() {
-  const [prev,setPrev]=useState(false);
+function BookingCar(){
+const [nextPage,setNextPage] = useState(false);
+const [prev,setPrev]=useState(false);
+
+  const onNext=()=>{
+    setNextPage(true);
+  }
+
   const onPrev=()=>{
     setPrev(true);
+  
+  }
+  if(nextPage){
+    return(
+      <Addonoption/>
+    )
   }
 
   if(prev){
@@ -61,12 +75,10 @@ function BookingCar() {
                 </div>
                 {/* //here third page will be render on next click */}
                 <div className="bg-pink-500 text-white text-3xl py-6 px-12 rounded cursor-pointer hover:bg-pink-600">
-                  <button>Next</button>
+                  <button onClick={onNext}>Next</button>
                 </div>
 
-                {/* <form>
-                  <input type="submit" value="Next" class="bg-pink-500 text-white text-3xl py-6 px-12 rounded cursor-pointer hover:bg-pink-600" />
-                </form> */}
+                
               </div>
             </li>
           </ul>
