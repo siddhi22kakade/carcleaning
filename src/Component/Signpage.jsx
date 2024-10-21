@@ -6,7 +6,7 @@ const Signpage = () => {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [message, setMessage] = useState('');
   const [showPassword, setShowPassword] = useState(false); 
-  const [showConfirmPassword, setShowConfirmPassword] = useState(false); 
+  const [showConfirmPassword,setShowConfirmPassword] = useState(false); 
   const [phone, setPhone] = useState(false); 
   const handleSignpage = (e) => {
     e.preventDefault();
