@@ -1,32 +1,24 @@
-@media screen and (min-width: 768px) {
-    .block {
-        width: 600px; 
-    }
-}
 
-     .pass {
-        margin: 20px 40px; 
-    } 
-
-    .payment {
-        width: 80%;
-    }
-        /* .Type {
-            font: size 1px;;
-
-        } */
 body {
     background-color: rgb(223, 236, 236);
 }
-
-
+@media screen and (min-width: 768px) {
+    .tamplate{
+        width: 600px; 
+    }
+}
+     .pass {
+        margin: 20px 40px; 
+    } 
+    .payment {
+        width: 80%;
+    }
 .img {
     width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-
-.block {
+.tamplate{
     background-color: white;
     width: 90%;
     max-width: 460px;
@@ -35,20 +27,18 @@ body {
     padding-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.Type {
+.type {
     color: darkblue;
     text-align: center;
     margin-top: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.4rem;
-  
 }
 .pass {
     margin: 20px 20px;
     color: gray;
     text-align: center;
-    line-height: 1.5;
-    letter-spacing: 0.2px;
+    line-height: 1.5; 
 }
 .power {
     width: 80%;
@@ -60,14 +50,14 @@ body {
     align-items: center;
     padding: 10px;
 }
-.List {
+.list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     list-style-type: none;
 }
-.Annual {
+.annual {
     flex-grow: 1;
     padding-left: 10px;
 }
@@ -93,6 +83,9 @@ body {
     color: gray;
     font-family: Arial, Helvetica, sans-serif;
 }
+.text-center {
+    text-align: center;
+}
 .payment {
     height: auto;
     width: 90%;
@@ -100,7 +93,6 @@ body {
     background-color: blue;
     margin: 30px auto 0 auto;
     border-radius: 19px;
-    text-align: center;
     padding: 10px;
     color: white;
     box-shadow: 0 15px 10px rgba(59, 80, 218, 0.2);
@@ -115,21 +107,21 @@ body {
     margin: 20px auto; 
 }
 @media screen and (min-width: 1024px) {
-    .block {
+    .tamplate {
         width: 700px;
     }
 }
+.flex {
+    display: flex; 
+}
 .power {
-    display: flex;
     justify-content: space-between; 
     align-items: center; 
     flex-wrap: wrap; 
     padding: 10px;
     width: 80%; 
-    box-sizing: border-box; 
-  }
- 
-  .List {
+}
+  .list {
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -137,8 +129,7 @@ body {
     padding: 0;
     margin: 0;
   }
-  
-  .Annual {
+  .annual {
     display: flex;
     flex-direction: column;
   }
@@ -147,13 +138,10 @@ body {
       flex-direction: column; 
       align-items: flex-start; 
     }
-  
-    .List {
+    .list {
       flex-direction: column; 
     }
-  
     .change {
       margin-top: 10px; 
     }
-    
   }
