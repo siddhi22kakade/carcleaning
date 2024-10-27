@@ -15,7 +15,6 @@ function Car() {
   return (
 
     <>
-
       <div style={{ display: "flex", flexDirection: "column", alignContent: "center", verticalAlign: "" }}>
         <div class="h-64 flex justify-center mt-10">
           <img src="car.png" class="h-64 w-70 mt-10 ml-10" />
@@ -81,6 +80,12 @@ function Car() {
           <p>All rights reserved.</p>
         </div>
       </div>
+  
+  <div>
+    
+  </div>
+
+
 
       <div>
       </div>
